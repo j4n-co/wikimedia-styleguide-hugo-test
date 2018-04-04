@@ -1,0 +1,30 @@
+{
+  "name": "wikimediaui-style-guide",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently 'npm run postcss' 'npm run hugo-server' --names='postcss,hugo' --prefix-colors='green,magenta'",
+    "build": "npm run postcss && cd exampleSite && hugo",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "hugo-server": "cd exampleSite && hugo server --ignoreCache --renderToDisk --cleanDestinationDir",
+    "postcss:dev": "postcss ./static-src/postcss/wmui-style-guide.dev.css --watch --env=development --config=./.postcssrc.js --verbose --output=./static/css/wmui-style-guide.css",
+    "postcss": "postcss ./static-src/postcss/wmui-style-guide.dev.css --env=production --config=./.postcssrc.js --verbose --output=./static/css/wmui-style-guide.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^8.2.0",
+    "concurrently": "^3.5.1",
+    "cssnano": "^3.10.0",
+    "hugo-bin": "^0.23.0",
+    "normalize.css": "^8.0.0",
+    "postcss": "^6.0.21",
+    "postcss-cli": "^5.0.0",
+    "postcss-custom-properties": "^7.0.0",
+    "postcss-import": "^11.1.0",
+    "stylelint": "^8.2.0",
+    "stylelint-config-wikimedia": "^0.4.2",
+    "wikimedia-ui-base": "^0.10.0"
+  }
+}

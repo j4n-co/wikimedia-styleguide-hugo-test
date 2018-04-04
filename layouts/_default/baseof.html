@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{{ `<!--[if lte IE 8 ]><html lang="en" class="js-off lte-ie8"><![endif]-->` | safeHTML }}
+{{ `<!--[if IE 9 ]>    <html lang="en" class="js-off ie9"><![endif]-->` | safeHTML }}
+{{ `<!--[if (gt IE 9)|!(IE)]><!-->` | safeHTML }}
+<html>
+{{ `<!--<![endif]-->` | safeHTML }}
+	{{ partial "html_head.html" . }}
+	<body class="page--home">
+		{{ block "header" . }}
+			{{ partial "header.html" . }}
+		{{ end }}
+		<div class="page">
+			<div class="content-box">
+				<div class="col col--start">
+					{{ partial "nav.html" . }}
+				</div>
+				<div class="col col--end">
+					<main id="content" class="content" role="main">
+						<h1> {{ .Kind }} </h1>
+						{{ block "main" . }}
+							{{.Content}}
+						{{ end }}
+					</main>
+				</div>
+			</div>
+		</div>
+		{{ block "footer" . }}
+			{{ partial "footer.html" . }}
+		{{ end }}
+	</body>
+</html>

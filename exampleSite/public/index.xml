@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Introduction on Wikimedia Style Guide</title>
+    <link>//localhost:1313/</link>
+    <description>Recent content in Introduction on Wikimedia Style Guide</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    
+	<atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Principles</title>
+      <link>//localhost:1313/visual-style/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/visual-style/</guid>
+      <description>When making design decisions, we need to choose among possible solutions. Design principles help to decide what to prioritize for.
+Our identified design principles:
+ This is for everyone Content first Open to collaboration Trustworthy yet joyful Design for consistency  They are captured below. Find further details at Design on Wikimedia Meta-Wiki.
+This is for everyone We aim to support a very diverse audience as a core part of our mission.</description>
+    </item>
+    
+    <item>
+      <title>Colors</title>
+      <link>//localhost:1313/visual-style/colors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/visual-style/colors/</guid>
+      <description>Event content I&amp;rsquo;m the colors page.
+Look at me!</description>
+    </item>
+    
+    <item>
+      <title>Design Principles</title>
+      <link>//localhost:1313/design-principles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/design-principles/</guid>
+      <description>When making design decisions, we need to choose among possible solutions. Design principles help to decide what to prioritize for.
+Our identified design principles:
+ This is for everyone Content first Open to collaboration Trustworthy yet joyful Design for consistency  They are captured below. Find further details at Design on Wikimedia Meta-Wiki.
+This is for everyone We aim to support a very diverse audience as a core part of our mission.</description>
+    </item>
+    
+    <item>
+      <title>Icons</title>
+      <link>//localhost:1313/visual-style/icons/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/visual-style/icons/</guid>
+      <description>Event content
+I&amp;rsquo;m the visual style icons?.
+Will it fail? say what/</description>
+    </item>
+    
+    <item>
+      <title>Illustrations</title>
+      <link>//localhost:1313/visual-style/illustrations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/visual-style/illustrations/</guid>
+      <description>I&amp;rsquo;m the illustration content, right? right?</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,9 @@
+baseURL = "localhost:1313/"
+languageCode = "en-US"
+defaultContentLanguage = "en"
+
+title = "Wikimedia Style Guide"
+theme = "WikimediaUI-Style-Guide"
+themesDir = "../.."
+metaDataFormat = "yaml"
+sectionPagesMenu = "main"
