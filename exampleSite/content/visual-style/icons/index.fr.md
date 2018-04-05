@@ -1,5 +1,5 @@
 ---
-title: 'Icons'
+title: 'Le Icons'
 weight: 3
 menu:
   main:

@@ -4,7 +4,7 @@ page_class: "home"
 weight: 1
 menu:
   main:
-    name: 'Introduction'
+    title: 'Introduction'
 ---
 
 Wikimedia Design Style Guide ensures consistency in how our products look and behave. Its guidelines enable interactions between our diverse communities and users. 

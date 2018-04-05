@@ -1,5 +1,5 @@
 ---
-title: 'Colors'
+title: 'Le Colors'
 weight: 3
 menu:
   main:

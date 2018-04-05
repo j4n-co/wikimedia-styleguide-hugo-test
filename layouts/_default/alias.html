@@ -1,8 +1,0 @@
-{{ define "main" }}
-	{{ with .Site.GetPage "page" (index .Aliases 0) }}
-		<div class="page__parent-title"> {{.Parent.Title}}</div>
-		<h1 class="page__title">{{ .Title }}</h1>
-		{{ .Content }}
-	{{ end }}
-{{ end }}
-

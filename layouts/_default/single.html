@@ -1,6 +1,18 @@
 
 {{ define "main" }}
-	<div class="page__parent-title"> {{.Parent.Title}}</div>
-	<h1 class="page__title">{{ .Title }}</h1>
-	{{ .Content }}
+
+	{{ if .Params.redirect }}
+
+		{{ with .Site.GetPage "page" .Params.redirect }}
+			<div class="page__parent-title"> {{.Parent.Title}}</div>
+			<h1 class="page__title"> {{ .Title }} </h1>
+			{{ .Content }}
+		{{ end }}
+
+	{{ else }}
+			<div class="page__parent-title"> {{.Parent.Title}}</div>
+			<h1 class="page__title">{{ .Title }}</h1>
+			{{ .Content }}
+	{{end }}
+
 {{ end }}

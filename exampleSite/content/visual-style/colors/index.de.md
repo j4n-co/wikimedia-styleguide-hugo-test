@@ -1,5 +1,5 @@
 ---
-title: 'Colors'
+title: 'Das Colors'
 weight: 3
 menu:
   main:

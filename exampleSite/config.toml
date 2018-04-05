@@ -6,4 +6,8 @@ title = "Wikimedia Style Guide"
 theme = "WikimediaUI-Style-Guide"
 themesDir = "../.."
 metaDataFormat = "yaml"
-sectionPagesMenu = "main"
+
+[languages]
+[languages.en]
+[languages.de]
+[languages.fr]

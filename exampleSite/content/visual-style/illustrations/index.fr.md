@@ -1,5 +1,5 @@
 ---
-title: 'Illustrations'
+title: 'Le Illustrations'
 weight: 4
 menu:
   main:
