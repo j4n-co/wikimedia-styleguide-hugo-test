@@ -1,4 +1,4 @@
-baseURL = "https://j4n-co.github.io/wikimedia-styleguide-hugo-test/"
+baseURL = "https://j4n-co.github.io/"
 languageCode = "en-US"
 defaultContentLanguage = "en"
 relativeURLs = true
