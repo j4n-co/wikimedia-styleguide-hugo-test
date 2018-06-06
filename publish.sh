@@ -2,7 +2,7 @@
 
 DIR=$(dirname "$0")
 
-cd $DIR/exampleSite/..
+cd $DIR/exampleSite/
 
 if [[ $(git status -s) ]]
 then

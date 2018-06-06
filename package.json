@@ -11,7 +11,7 @@
     "hugo-server": "cd exampleSite && hugo server --renderToDisk --disableFastRender --noHTTPCache --ignoreCache --cleanDestinationDir",
     "postcss:dev": "postcss ./static-src/postcss/wmui-style-guide.dev.css --watch --env=development --config=./.postcssrc.js --verbose --output=./static/css/wmui-style-guide.css",
     "postcss": "postcss ./static-src/postcss/wmui-style-guide.dev.css --env=production --config=./.postcssrc.js --verbose --output=./static/css/wmui-style-guide.css",
-	"publish": "./publish_to_ghpages.sh"
+	"publish": "./publish.sh"
 },
   "author": "",
   "license": "ISC",
