@@ -5,14 +5,15 @@
   "main": "index.js",
   "scripts": {
     "start": "concurrently 'npm run postcss' 'npm run hugo-server' 'npm run open-browser' --names='postcss,hugo,open-browser' --prefix-colors='green,magenta,blue'",
-	"open-browser": "open http://localhost:1313/wikimedia-styleguide-hugo-test/",
-	"build": "npm run postcss && cd exampleSite && hugo",
+    "open-browser": "open http://localhost:1313/wikimedia-styleguide-hugo-test/",
+    "build": "npm run postcss && cd exampleSite && hugo && cd .. && npm run clean-html",
     "test": "echo \"Error: no test specified\" && exit 1",
     "hugo-server": "cd exampleSite && hugo server --renderToDisk --disableFastRender --noHTTPCache --ignoreCache --cleanDestinationDir",
     "postcss:dev": "postcss ./static-src/postcss/wmui-style-guide.dev.css --watch --env=development --config=./.postcssrc.js --verbose --output=./static/css/wmui-style-guide.css",
-    "postcss": "postcss ./static-src/postcss/wmui-style-guide.dev.css --env=production --config=./.postcssrc.js --verbose --output=./static/css/wmui-style-guide.css",
-	"publish": "./publish.sh"
-},
+	"postcss": "postcss ./static-src/postcss/wmui-style-guide.dev.css --env=production --config=./.postcssrc.js --verbose --output=./static/css/wmui-style-guide.css",
+	"clean-html": "html-beautify ./exampleSite/public/**/**.html ./exampleSite/public/**/**/**.html ./exampleSite/public/*.html -r",
+    "publish": "./publish.sh"
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -20,6 +21,7 @@
     "concurrently": "^3.5.1",
     "cssnano": "^3.10.0",
     "hugo-bin": "^0.27.1",
+    "js-beautify": "^1.7.5",
     "normalize.css": "^8.0.0",
     "postcss": "^6.0.22",
     "postcss-cli": "^5.0.0",
@@ -28,5 +30,6 @@
     "stylelint": "^8.4.0",
     "stylelint-config-wikimedia": "^0.4.3",
     "wikimedia-ui-base": "^0.10.0"
-  }
+  },
+  "dependencies": {}
 }
