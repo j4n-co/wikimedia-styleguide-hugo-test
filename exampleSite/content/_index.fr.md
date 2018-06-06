@@ -1,10 +1,11 @@
 ---
-title: "Le Introduction"
-page_class: "home"
+title: Le Introduction
+page_class: home
 weight: 1
+layout: single
 menu:
   main:
-    title: 'Le Introduction'
+    title: Le Introduction
 ---
 
 Wikimedia Design Style Guide assure la cohérence de l'apparence et du comportement de nos produits. Ses lignes directrices permettent des interactions entre nos diverses communautés et utilisateurs.

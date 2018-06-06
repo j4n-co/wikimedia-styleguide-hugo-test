@@ -1,18 +1,20 @@
+{{ define "doc" }}
+<!--
+	Single page
+	Defines top-level content pages or other pages
+	at the highest level of a menu.
+	e.g:
+	- home     <- top level page
+	- about    <- top level page
+		- team <- not a top level page
+
+	Note: This is the default template if no layout is specified.
+-->
+{{ end }}
 
 {{ define "main" }}
 
-	{{ if .Params.redirect }}
-
-		{{ with .Site.GetPage "page" .Params.redirect }}
-			<div class="page__parent-title"> {{.Parent.Title}}</div>
-			<h1 class="page__title"> {{ .Title }} </h1>
-			{{ .Content }}
-		{{ end }}
-
-	{{ else }}
-			<div class="page__parent-title"> {{.Parent.Title}}</div>
-			<h1 class="page__title">{{ .Title }}</h1>
-			{{ .Content }}
-	{{end }}
+	<h1 class="page__title">{{ .Title }}</h1>
+	{{ .Content }}
 
 {{ end }}

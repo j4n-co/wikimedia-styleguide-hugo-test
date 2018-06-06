@@ -1,9 +1,9 @@
 ---
-title: "Design Principles"
+title: Design Principles
 weight: 2
 menu:
   main:
-    name: 'Design Principles'
+    name: Design Principles
 ---
 
 When making design decisions, we need to choose among possible solutions. Design principles help to decide what to prioritize for.

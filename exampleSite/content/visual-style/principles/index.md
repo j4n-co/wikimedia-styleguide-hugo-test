@@ -1,18 +1,20 @@
 ---
 title:  Principles
-url: '/visual-style/'
+url: /visual-style/
 weight: 1
+layout: single--subpage
 menu:
   main:
-    parent: 'visual-style'
+    parent: visual-style
 ---
 
 Wikimedia projects are associated with learning, editorship, and books. They are neutral and transparent. They are about reading and writing.
 
-Wikipedia is our most prominent project.
-It's an encyclopedia. It's a modern encyclopedia. We have a certain perception of visual identity when we talk about encyclopedias. An identity which reflects wisdom. At the same time, traditional encyclopedias have a dated look and feel. This is also the big difference between traditional knowledge sharing and Wikipedia. Wikipedia is continuously evolving and we need to incorporate that into its look and feel.
+Wikipedia – our most prominent project – is a modern encyclopedia with its roots in traditional knowledge sharing. Our design choices acknowledge the past, and look ahead to the future.
 
-Paper was the largest medium for spreading knowledge. Today it is computers. We borrowed values that are tied to printed media. Values like trustworthiness and academical objectivity.
+Paper was once the medium for spreading knowledge. Our encyclopedic knowledge was stored in the pages of leatherbound books. Today, we find it online. We access it from our computers, smartphones, and tablets.
+
+We take our design cues from printed media, reflecting values like trustworthiness and academical objectivity.
 
 ![Paper and ink](principles-paper-ink.png)
 
@@ -26,15 +28,15 @@ Paper casts subtle shadows onto a base surface. Paper has slightly rounded corne
 
 We follow our design principles of content first, content precedes chrome.
 
-> Chrome is the visual design elements that give users information about or commands to operate on the screen's content (as opposed to being part of that content). [Browser and GUI Chrome](https://www.nngroup.com/articles/browser-and-gui-chrome/), Nielsen 2012
+> Chrome is the visual design elements that give users information about or commands to operate on the screen's content (as opposed to being part of that content).
+-- <cite>[Browser and GUI Chrome](https://www.nngroup.com/articles/browser-and-gui-chrome/), Nielsen 2012 </cite>
 
 Content goes on paper, chrome stays on the base layer.
 
 ![Color and font samples from our guideline](principles-color-type.png)
 
-Our color choices are inspired by black, white, and ink blue. Typography has roots in traditional typefaces.
+Our color choices are inspired by ink on paper: black, white, and blue. Our typography reflects traditional print typefaces.
 
 ![Comparison of some of our guided attributes with “old medium” New York Times](principles-style-tile.png)
 
-It is an uncommon mix of new and old media. Joyful yet trustworthy.
-The topics in this section are examinations of these ideas.
+Our goal is to invoke the old and the new, to evoke joy and trust.

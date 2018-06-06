@@ -1,6 +1,7 @@
 ---
 title: 'Das Icons'
 weight: 3
+layout: single--subpage
 menu:
   main:
     parent: 'visual-style'

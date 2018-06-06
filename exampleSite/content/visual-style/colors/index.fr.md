@@ -1,6 +1,7 @@
 ---
 title: 'Le Colors'
 weight: 3
+layout: single--subpage
 menu:
   main:
     parent: 'visual-style'

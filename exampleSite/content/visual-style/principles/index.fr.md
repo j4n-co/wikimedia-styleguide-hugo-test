@@ -1,10 +1,10 @@
 ---
 title:  Le Principles
-url: 'fr/visual-style/'
+url: fr/visual-style/
 weight: 1
 menu:
   main:
-    parent: 'visual-style'
+    parent: visual-style
 ---
 
 Wikimedia-Projekte sind mit Lernen, Redaktion und Büchern verbunden. Sie sind neutre et transparent. Es geht um Lesen und Schreiben.

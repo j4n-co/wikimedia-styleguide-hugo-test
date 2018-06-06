@@ -1,0 +1,20 @@
+{{ define "doc" }}
+<!--
+	Single sub page
+
+	Defines a page nested below a menu item.
+	Provides a subheading with the title of the parent page (a.k.a "section").
+	e.g:
+	- home     <- not a sub page
+	- about    <- not a sub page
+		- team <- sub page
+-->
+{{ end }}
+
+{{ define "main" }}
+
+	<div class="page__parent-title">{{ .Parent.Title }}</div>
+	<h1 class="page__title">{{ .Title }}</h1>
+	{{ .Content }}
+
+{{ end }}

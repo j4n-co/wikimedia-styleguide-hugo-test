@@ -1,6 +1,7 @@
 ---
 title: 'Le Illustrations'
 weight: 4
+layout: single--subpage
 menu:
   main:
     parent: 'visual-style'

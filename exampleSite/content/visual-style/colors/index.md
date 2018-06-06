@@ -1,6 +1,7 @@
 ---
 title: 'Colors'
-weight: 3
+weight: 2
+layout: single--subpage
 menu:
   main:
     parent: 'visual-style'
@@ -10,18 +11,18 @@ The [color palette](https://phabricator.wikimedia.org/M82) represents our charac
 
 ![color palette](Color-palette-2017-01-15-simplified.png)
 
-Making the content readable for everyone was our main goal. Accessibility considerations have been our top priority. Each color in the palette indicates its [WCAG](https://www.w3.org/WAI/intro/wcag "Web Content Accessibility Guidelines 2.0") conformance level (“AA” or “AAA”). It's based on colors' contrast against white or black.
+Because content readability for everyone is our main goal, we have made accessibility considerations a top priority. Each color in the palette indicates its [WCAG](https://www.w3.org/WAI/intro/wcag "Web Content Accessibility Guidelines 2.0") conformance level (“AA” or “AAA”). This level is based on a color's contrast against white or black.
 
-### Base colors
+## Base colors
 
-Base colors define the content surface and the main color for content. Different shades of paper and ink are useful to emphasise or de-emphasise different content areas.
+Base colors define the content surface and the main color for content. Different shades of paper and ink are useful to emphasize or de-emphasize different content areas.
 
-Base colors go from pure white (Base100) to true black (Base0). Intermediate shades of grey include a tint of blue for greater harmony with our accent color.
+Base colors range from pure white (Base100) to true black (Base0). Intermediate shades of gray include a tint of blue for greater harmony with our accent colors.
 
-When applying text on a surface, you need to [check the color contrast](http://webaim.org/resources/contrastchecker/) between the text and the background:
+When applying text on a surface, you need to [check the color contrast](http://webaim.org/resources/contrastchecker/) between the text and the background: 
 
-*   Base100…50 are safe text colors for a black surface.
-*   Base30…0 are safe text colors for a white surface.
+-   Base100...50 are safe text colors for a black surface.
+-   Base30...0 are safe text colors for a white surface.
 
 {{< swatch_section >}}
   {{< swatch name="Base100" hex="#ffffff" rgb="RGB 255, 255, 255" hsb="HSB 0, 0%, 100%" wcag="AAA" >}}
@@ -35,13 +36,13 @@ When applying text on a surface, you need to [check the color contrast](http://w
   {{< swatch name="Base0"   hex="#000000" rgb="RGB 0, 0, 0"       hsb="HSB 0, 0%, 0%" wcag="AAA" dark="true" >}}
 {{< /swatch_section >}}
 
-### Accent colors
+## Accent colors
 
-Accent colors are used to emphasise actions and highlight key information. Blue is a natural choice in our context, where it has been the default color used for links, conveying the idea of action.
+Accent colors are used to emphasize actions and to highlight key information. Blue is a natural choice in our context, where it has been the default color used for links and conveys the idea of action.
 
-There are three shades provided for situations where you need a lighter (Accent90), regular (Accent50) or a darker (Accent10) version.
+There are three shades provided for when you need a lighter (Accent90), regular (Accent50) or a darker (Accent10) version of blue.
 
-Accent50 provides a blue which is suitable to be used for text and as background. When used as link text it provides sufficient contrast with black text to notice the difference. When used as background, it provides enough contrast with white text to keep the text readable.
+Accent50 is suitable to use for text and as background. When used for link text, this color provides sufficient contrast with black text. When used as background, it provides sufficient contrast with white text.
 
 {{< swatch_section >}}
   {{< swatch name="Accent90" hex="#eaf3ff" rgb="RGB 234, 243, 255" hsb="HSB 214, 8%, 100%" wcag="AAA" >}}
@@ -49,9 +50,10 @@ Accent50 provides a blue which is suitable to be used for text and as background
   {{< swatch name="Accent10"  hex="#2a4b8d" rgb="RGB 42, 75, 141" hsb="HSB 220, 70%, 55%" wcag="AAA" >}}
 {{< /swatch_section >}}
 
-### Utility colors
+## Utility colors
 
-Red, green and yellow are utility colors. They can act as accent colors bringing the additional meaning that is commonly associated with them.
+Utility colors are another type of accent color. Common meanings are associated with them.
+We use shades of red, green, and yellow as utility colors.
 
 {{< swatch_section >}}
   {{< swatch name="Red90" hex="#fee7e6" rgb="RGB 255, 231, 230" hsb="HSB 2, 10%, 100%" wcag="AAA" >}}
@@ -65,6 +67,6 @@ Red, green and yellow are utility colors. They can act as accent colors bringing
   {{< swatch name="Yellow30"  hex="#ac6600" rgb="RGB 172, 102, 0" hsb="HSB 36, 100%, 67%" wcag="AA" >}}
 {{< /swatch_section >}}
 
-### Additional colors
+## Additional colors
 
-Some use cases, such as charts and data visualization, may need a broader color palette. Make sure to aim for level AA contrast (4.5:1) when extending the default palette. Also try to test how they are perceived at different color vision deficiency conditions.
+Some use cases, such as charts and data visualization, may need a broader color palette. Aim for level AA contrast (4.5:1) when extending the default palette. Make sure to test how these colors are perceived at different color vision deficiency conditions.

@@ -1,10 +1,11 @@
 ---
-title: "Das Introduction"
-page_class: "home"
+title: Das Introduction
+page_class: home
 weight: 1
+layout: single
 menu:
   main:
-    title: 'Das Introduction'
+    title: Das Introduction
 ---
 
 

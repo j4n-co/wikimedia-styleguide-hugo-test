@@ -1,6 +1,7 @@
 baseURL = "https://j4n-co.github.io/wikimedia-styleguide-hugo-test/"
 languageCode = "en-US"
 defaultContentLanguage = "en"
+relativeURLs = true
 
 title = "Wikimedia Style Guide"
 theme = "WikimediaUI-Style-Guide"

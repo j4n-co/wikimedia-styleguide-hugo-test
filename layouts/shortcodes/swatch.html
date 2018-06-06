@@ -1,11 +1,17 @@
+{{ define "doc" }}
+<!--
+	Swatch template
+-->
+{{ end }}
+
 <li class="color {{ if isset .Params "dark" }}color--dark{{ end }}">
-	<div class="color__swatch" style="background-color: {{.Get "hex" }};">
-		<strong class="color__name">{{.Get "name" }}</strong>
-		<span class="color__wcag-level" title="WCAG conformance level">{{.Get "wcag" }}</span>
+	<div class="color__swatch" style="background-color: {{ .Get "hex" }};">
+		<strong class="color__name">{{ .Get "name" }}</strong>
+		<span class="color__wcag-level" title="WCAG conformance level">{{ .Get "wcag" }}</span>
 	</div>
 	<div class="color__codes">
-		<code class="color-code color-code--hex">{{.Get "hex" }}</code>
-		<code class="color-code color-code--rgb">{{.Get "rgb" }}</code>
-		<code class="color-code color-code--hsb">{{.Get "hsb" }}</code>
+		<code class="color-code color-code--hex">{{ .Get "hex" }}</code>
+		<code class="color-code color-code--rgb">{{ .Get "rgb" }}</code>
+		<code class="color-code color-code--hsb">{{ .Get "hsb" }}</code>
 	</div>
 </li>

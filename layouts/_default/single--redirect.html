@@ -1,0 +1,28 @@
+{{ define "doc" }}
+<!--
+	Single Redirect
+
+	Provides a way to structure the menu so that clicking on
+	a top-level link actually opens a sub page of that section.
+	e.g:
+	- home
+	- about    <- active page and url
+		- team <- actually displaying content from this page
+
+	To use: In the above example, include a 'redirect' property
+	in the front-matter of the "about" page with the slug of the
+	child page.
+	e.g:
+	redirect: "about/team"
+-->
+{{ end }}
+
+{{ define "main" }}
+
+	{{ with .Site.GetPage "page" .Params.redirect }}
+		<div class="page__parent-title">{{ .Parent.Title }}</div>
+		<h1 class="page__title"> {{ .Title }} </h1>
+		{{ .Content }}
+	{{ end }}
+
+{{ end }}

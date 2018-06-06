@@ -5,7 +5,11 @@
 <html>
 {{ `<!--<![endif]-->` | safeHTML }}
 	{{ partial "html_head.html" . }}
-	<body class="page--home">
+	{{ $relUrl := relURL .URL }}
+	{{ $pageClassPrefix := "page--" }}
+	{{ $pageClassSuffix := or (trim $relUrl "/" | replaceRE "/" "-") "home"  }}
+	{{ $pageClass := print $pageClassPrefix $pageClassSuffix  }}
+	<body class="{{ $pageClass }}" vocab="http://schema.org/" typeof="WebPage">
 		{{ block "header" . }}
 			{{ partial "header.html" . }}
 		{{ end }}
@@ -17,7 +21,7 @@
 				<div class="col col--end">
 					<main id="content" class="content" role="main">
 						{{ block "main" . }}
-							{{.Content}}
+							{{ .Content }}
 						{{ end }}
 					</main>
 				</div>
@@ -26,5 +30,6 @@
 		{{ block "footer" . }}
 			{{ partial "footer.html" . }}
 		{{ end }}
+		{{ block "doc" . }}{{ end }}
 	</body>
 </html>

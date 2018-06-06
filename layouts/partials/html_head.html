@@ -1,6 +1,16 @@
+{{ define "doc" }}
+<!--
+	HTML <head> element, for meta and style tags.
+-->
+{{ end }}
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<meta property="og:title" content="Wikimedia Design Style Guide (WikimediaUI)">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://design.wikimedia.org/style-guide">
+	<meta property="og:image" content="https://design.wikimedia.org/style-guide/img/design-principles/content-first.png">
 	<link rel="stylesheet" href="/css/wmui-style-guide.css">
 	<title>
 		{{ block "title" . }}
@@ -17,7 +27,6 @@
 		<script src='js/vendor/ie/respond-1.4.2.min.js'></script>
 		<![endif]-->` | safeHTML }}
 	<link rel="preload" href="/fonts/Charter_regular.woff2" as="font" type="font/woff2" crossorigin>
-	<link rel="preload" href="/fonts/Lato_regular.woff2" as="font" type="font/woff2" crossorigin>
 	<script src="/js/fonts-loader.js" async></script>
 	<script>
 		var _paq = _paq || [];
@@ -32,11 +41,11 @@
 			g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
 		}
 		if (window.addEventListener) {
-			window.addEventListener('load', embedTrackingCode, false);
+		    window.addEventListener('load', embedTrackingCode, false);
 		} else if (window.attachEvent) {
-			window.attachEvent('onload',embedTrackingCode);
+		    window.attachEvent('onload',embedTrackingCode);
 		} else {
-			embedTrackingCode();
+		    embedTrackingCode();
 		}
 	</script>
 </head>

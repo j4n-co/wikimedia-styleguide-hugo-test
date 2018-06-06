@@ -1,6 +1,7 @@
 ---
 title: 'Icons'
-weight: 3
+weight: 4
+layout: single--subpage
 menu:
   main:
     parent: 'visual-style'
@@ -10,9 +11,9 @@ Icons help convey a message visually.
 
 ![Sample of WikimediaUI icons](icons-sample.svg)
 
-### Principles
+## Principles
 
-Wikimedia icons should be simple and neutral. [\[1\]](#References)
+Wikimedia icons should be simple and neutral. <sup>[\[1\]](#References)</sup>
 
 **Reduce to the essential form.** Pare down details to convey the icon in as simple a shape as possible. The core idea of the design should be clearly conveyed, whilst remaining easily discernible even at smaller sizes. For example, a keyboard should _not_ be represented by showing all 100+ keys that are in the real object, since this would make it unrecognizable.
 
@@ -24,7 +25,7 @@ Wikimedia icons should be simple and neutral. [\[1\]](#References)
 
 **Neutral point of view.** Avoid concepts such as gestures, animals, religion, humor, ethnicity, and gender.
 
-### Visual style
+## Visual style
 
 Characteristics of a WikimediaUI icon:
 
