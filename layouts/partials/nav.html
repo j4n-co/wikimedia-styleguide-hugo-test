@@ -11,18 +11,18 @@
 	{{ range .Site.Menus.main }}
 		{{ if .HasChildren }}
 		<li class="nav__item {{ if $currentPage.HasMenuCurrent "main" . }} is-on {{ end }}">
-			<a href="{{ .URL | relURL }}">{{ .Name }}</a>
+			<a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
 			<ul class="nav__sub-items">
 				{{ range .Children }}
 				<li class="nav__sub-item {{ if $currentPage.IsMenuCurrent "main" . }} is-on {{ end }}">
-					<a href="{{ .URL | relURL }}">{{ .Name }}</a>
+					<a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
 				</li>
 				{{ end }}
 			</ul>
 		</li>
 		{{else}}
 		<li  class="nav__item {{ if $currentPage.IsMenuCurrent "main" . }} is-on {{ end }}">
-			<a href="{{ .URL | relURL }}">{{ .Pre }}{{ .Name }}</a>
+			<a href="{{ .URL | relLangURL }}">{{ .Pre }}{{ .Name }}</a>
 		</li>
 		{{end}}
 	{{end}}
