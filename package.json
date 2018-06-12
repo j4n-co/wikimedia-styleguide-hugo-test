@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "concurrently 'npm run postcss' 'npm run hugo-server' 'npm run open-browser' --names='postcss,hugo,open-browser' --prefix-colors='green,magenta,blue'",
-    "open-browser": "open http://localhost:1313/wikimedia-styleguide-hugo-test/",
+    "open-browser": "open http://localhost:1313",
     "build": "npm run postcss && cd exampleSite && hugo && cd .. && npm run clean-html",
     "test": "echo \"Error: no test specified\" && exit 1",
     "hugo-server": "cd exampleSite && hugo server --renderToDisk --disableFastRender --noHTTPCache --ignoreCache --cleanDestinationDir",
