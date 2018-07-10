@@ -1,0 +1,32 @@
+{{ define "doc" }}
+<!--
+	Single subpage with remote content
+
+	Defines a page that pulls in content remotely instead of from the content section.
+	Remote content can be defined by front-matter parameters in the markdown file like this:
+
+	```
+	remote:
+		host: 'en.wikipedia.org'
+		title: 'Steve Jobs'
+	```
+	The content from the english wikipedia article on Steve Jobs would be the content
+	of the page.
+-->
+{{ end }}
+
+{{ define "main" }}
+
+	<div class="page__parent-title">{{ .Parent.Title }}</div>
+	<h1 class="page__title">{{ .Title }}</h1>
+
+	{{ if isset .Params "remote" }}
+		{{ $remoteUrl := print "https://" .Params.remote.host "/w/api.php?" ( querify "action" "parse" "format" "json" "page" .Params.remote.title "prop" "text" "utf8" 1 "formatversion" "latest" "mobileformat" 1) }}
+		{{ $remoteContent := getJSON ( $remoteUrl | safeURL | print ) }}
+		{{ safeHTML $remoteContent.parse.text }}
+
+	{{ else }}
+		{{ .Content }}
+	{{ end }}
+
+{{ end }}
